@@ -16,6 +16,9 @@ module Rails
 
       class CorrectableError < Error # :nodoc:
         attr_reader :key, :options
+        
+      class CorrectableError1 < Error # :nodoc:
+        attr_reader :key, :options
 
         def initialize(message, key, options)
           @key     = key
